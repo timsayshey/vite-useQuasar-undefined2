@@ -1,0 +1,58 @@
+{
+  "include": [
+    "src/*",
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    // types option has been previously configured
+    "types": [
+      // add node as an option
+      "node"
+    ],
+    // typeRoots option has been previously configured
+    "typeRoots": [
+      // add path to @types
+      "node_modules/@types"
+    ],
+    // Analysis with strict mode
+    "strict": true,
+    // Support jsx in the .TSX file
+    "jsx": "preserve",
+    // The JSX factory function used
+    "jsxFactory": "h",
+    // Allow the default introduction in the module that has never been set in the default export
+    "allowSyntheticDefaultImports": true,
+    // Enable the decoration
+    "experimentalDecorators": true,
+    "strictFunctionTypes": false,
+    // Allow compile javascript file
+    "allowJs": true,
+    // The module system adopted
+    "module": "esnext",
+    // Compile the output target ES version
+    "target": "ES2015",
+    // How to deal with the module
+    "moduleResolution": "node",
+    // There are hidden Any types on the expression and statement.
+    "noImplicitAny": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es6",
+      "es7",
+      "es2015.promise"
+    ],
+    "sourceMap": true,
+    "pretty": true
+  },
+  "vueCompilerOptions": {
+    "target": 3,
+    "skipTemplateCodegen": true, // For Volar Extension
+    "plugins": [
+      "@volar/vue-language-plugin-pug"
+    ]
+  }
+}
